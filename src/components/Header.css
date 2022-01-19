@@ -53,23 +53,31 @@ header h3:not(.countdown h3){
 
 @media all and (max-width: 983px){
     #praktikakohvik_logo{
-		width: 40%;
+		width: 50%;
 		height: auto;
-		right: 10px;
-		top: 50px;
+		right: 0;
+		top: 10px;
 	}
 }
 
 @media all and (max-width: 700px){
+    #praktikakohvik_logo{
+		width: 300px;
+		height: auto;
+		right: 15px;
+		top: 35px;
+	}
+
     h4{
 		padding-top: 30px;
 		font-size: 45px;
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.521);
 	}
 
-	#date{
+	header h3:not(.countdown h3){
 		margin-top: 10px;
 		font-size: 17px;
-		text-shadow: 3px 3px 6px black;
+		text-shadow: 2px 2px 3px black;
 	}
 
 	.countdown{

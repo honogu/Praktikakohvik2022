@@ -1,0 +1,70 @@
+{
+    "et": {
+        "countDown": {
+            "d": "PÄEVA",
+            "h": "TUNDI",
+            "m": "MINUTIT",
+            "s": "SEKUNDIT"
+        },
+        "date": "23. MÄRTS | 12:00 - 16:00 TalTechi aula",
+        "aboutTitle": "ÜRITUSEST",
+        "aboutContent": {
+            "firstHalf": "Praktikakohvik on TalTechi tudengitele suunatud infopäev, kus kohtuvad ettevõtete esindajad ja tulevased praktikandid. Huvilistel on võimalus küsida spetsialistidelt nende tööd puudutavaid küsimusi ning lähemalt tutvuda oma potentsiaalsete tööandjatega.",
+            "secondHalf": "PS! Praktikakohvik on eelkõige suunatud IT-tudengitele, kuid ka teiste teaduskondade üliõpilased võivad leida enda jaoks midagi huvitvat. Üritust korraldab IT-teaduskonna üliõpilaskogu."
+        },
+        "firmsTitle": "OSALEVAD FIRMAD:",
+        "map": "aula",
+        "questionTitle": "MIDA KÜSIDA?",
+        "questionContent": {
+            "info": "Siin on mõned näited küsimustest, mida esitada tööandjatele:",
+            "firstQuestion": "• Mis oskusi on vaja, et mingile kohale kandideerida?",
+            "secondQuestion": "• Milliseid tehnoloogiad firmas kasutatakse?",
+            "thirdQuestion": "• Mida oodata palga suhtes?",
+            "fourthQuestion": "• Milline näeb välja kontori igapäev?",
+            "fifthQuestion": "• Milline on töökoormus?",
+            "sixthQuestion": "• Kui paindlik on tudengina tööl käimise juures graafik või koormus?",
+            "seventhQuestion": "• Mis on ettevõttes arenemisvõimalused?",
+            "eighthQuestion": "• Kas pakutakse mingeid lisakoolitusi?"
+        },
+        "firmList": {
+            "Guide": "Vajuta firma nimele või lauale, et näha infot.",
+            "Veriff": "Veriff kaitseb ettevõtteid ja nende kliente identiteedipettuste ja -varguste eest. Isikusamasust tuvastatakse automaatselt tehisintellekti abil, analüüsides tuhandeid tehnoloogilisi ja käitumuslikke näitajaid. Kui klient mingil põhjusel automaatkontrolli ei läbi, siis tuvastavad isikusamasuse manuaalselt verifitseerijad. 2019. aasta lõpus suutis Veriff tuvastada rohkem kui 5500 dokumenditüüpi enam kui 190 riigist ning pakkus tuvastusprotsessi 34 keeles. Eksootilisematest keeltest on kaetud näiteks araabia, gruusia, jaapani, malai ja vietnami keel. Veriffi kliendid tegutsevad finants-, jagamismajanduse ja e-kaubanduse valdkonnas Berliinis, Londonis, New Yorgis, San Franciscos, Viinis ja teistes linnades. Juunis sõlmis Veriff koostöölepingu Berliini ühistranspordi ettevõttega BVG, kes käivitas unikaalse transpordiplatvormi Jelbi. Rakenduse kasutajad saavad ligipääsu kõigiks transporditoiminguteks ühe rakenduse kaudu. Veriffi teenus on vajalik kasutajate isikusamasuse ja juhiloa olemasolu tuvastamiseks.",
+            "A_dcash": "Adcash on 2007. aastal Eestis loodud ja kiirelt laienev rahvusvaheline IT-ettevõte. Adcashi digitaalreklaami platvorm võimaldab klientidel kasutada võrgukampaaniate elluviimiseks vajalikke lahendusi ja tööriistu. Adcashi kliendid jagunevad kaheks: reklaamijad, kes soovivad oma sihtrühmani jõudmiseks leida reklaamide jaoks sobivaimad veebilehed, ja reklaampindu pakkuvad publitseerijad, nt veebilehed ja portaalid, kes otsivad endale uusi reklaamikliente.",
+            "Undefined": "Selgub peagi."
+        }
+    },
+    "en": {
+        "countDown": {
+            "d": "DAYS",
+            "h": "HOURS",
+            "m": "MINUTS",
+            "s": "SECONDS"
+        },
+        "date": "23. MARCH | 12:00 - 16:00 TalTech hall",
+        "aboutTitle": "ABOUT-EVENT",
+        "aboutContent": {
+            "firstHalf": "Praktikakohvik is an information day for TalTech students, where representatives of companies and future interns meet. Those interested have the opportunity to ask professionals questions about their work and get to know their potential employers.",
+            "secondHalf": "PS! Praktikakohvik is primarily aimed at IT students, but students from other faculties may also find something interesting for themselves. The event is organized by the student council of the IT faculty."
+        },
+        "firmsTitle": "PARTICIPATING COMPANIES:",
+        "map": "hall",
+        "questionTitle": "WHAT TO ASK?",
+        "questionContent": {
+            "info": "Here are some examples of questions to ask employers:",
+            "firstQuestion": "• What skills are needed to apply for a position?",
+            "secondQuestion": "• What technologies are used in the company?",
+            "thirdQuestion": "• What to expect in terms of salary?",
+            "fourthQuestion": "• What does the office look like every day?",
+            "fifthQuestion": "• What is the workload?",
+            "sixthQuestion": "• How flexible is the schedule or workload when working as a student?",
+            "seventhQuestion": "• What are the development opportunities in the company? ",
+            "eighthQuestion": "• Are there any additional trainings offered?"
+        },
+        "firmList": {
+            "Guide": "Press on a firms name or on a table to view info.",
+            "Veriff": "Veriff protects companies and their customers from identity fraud and theft. Identity is automatically identified through artificial intelligence by analyzing thousands of technological and behavioral indicators. If for some reason the customer does not perform the automatic verification, the verifiers will manually verify the identity. At the end of 2019, Veriff was able to detect more than 5,500 document types in more than 190 countries and offered an identification process in 34 languages. More exotic languages ​​include Arabic, Georgian, Japanese, Malay and Vietnamese. Veriff's customers operate in the financial, sharing economy and e-commerce sectors in Berlin, London, New York, San Francisco, Vienna and other cities. In June, Veriff signed a cooperation agreement with BVG, a public transport company in Berlin, which launched the unique transport platform Jelbi. Users of the application will have access to all transport operations through a single application. The Veriff service is required to verify the identity of users and the existence of a driver's license.",
+            "A_dcash": "Adcash is an international IT company established in Estonia and expanding rapidly in 2007. Adcash's digital advertising platform enables customers to use the solutions and tools they need to run online campaigns. Adcash customers are divided into two: advertisers who want to find the most appropriate websites for their ads to reach their target audience, and publishers who offer advertising space, such as websites and portals looking for new advertising customers.",
+            "Undefined": "Coming soon."
+        }
+    }
+}

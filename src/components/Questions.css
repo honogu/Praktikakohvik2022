@@ -1,0 +1,19 @@
+.boxedd img {
+    width: 25%;
+	height: auto;
+	float: right;
+	margin-right: 10%;
+	padding-bottom: 20px;
+}
+
+.boxedd::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+
+@media all and (max-width: 983px){
+    .boxedd img{
+		width: 0;
+	}
+}

@@ -1,0 +1,94 @@
+nav{
+	height: auto;
+	width: 100%;
+    top: 0;
+	padding-left: 50px;
+	padding-right: 50px;
+	box-sizing: border-box;
+	background-color: #FF0063;
+	visibility: hidden;
+	position: fixed;
+	z-index: 1;
+}
+
+nav h1{
+	float: left;
+	padding-top: 9px;
+	font-size: 32px;
+}
+
+nav .countdown-header{
+	float: right;
+}
+
+nav .countdown-header div{
+	float: left;
+	padding-top: 5px;
+	color: white;
+	text-align: center;
+}
+
+.container-nav img{
+	position: fixed;
+	top: 13px;
+	left: 20px;
+	z-index: 2;
+	width: 30px;
+	height: auto;
+}
+
+@media all and (max-width: 983px){
+	nav{
+		height: 90px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	nav h1{
+		padding: 0;
+		text-align: center;
+		font-size: 30px;
+		flex: 0 0 100%;
+		height: 25px;
+	}
+
+	nav{
+		display: flex;
+		flex-direction: row-reverse;
+		flex-wrap:wrap;
+		justify-content: center;
+	}
+
+	.container-nav img{
+		left: auto;
+		right: 20px;
+	}
+}
+
+@media all and (max-width: 700px){
+	nav{
+		height: 60px;
+	}
+
+	nav .countdown-header div{
+		width: 45px;
+	}
+
+	nav h1{
+		height: 15px;
+		font-size: 20px;
+	}
+
+	nav h2{
+		font-size: 10px;
+		padding: 0;
+		text-align: center;
+	}
+
+	nav h3{
+		font-size: 15px;
+		padding: 0;
+		text-align: center;
+	}
+}
+

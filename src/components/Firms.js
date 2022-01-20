@@ -10,17 +10,17 @@ const Firms = () => {
     const [textStyle, setTextStyle] = useState({textAlign: "center", fontSize: "25px", paddingTop: "50px"});
     const [logosStyle, setLogosStyle] = useState({width: "0"});
 
-    function click(buttonsFirm) {
-		focusButtons(buttonsFirm);
-		buttonsFirm = buttonsFirm.length === 1 ? "Undefined" : buttonsFirm;
-        setFirm(buttonsFirm);
+    function click(selectedFirmsName) {
+		focusButtons(selectedFirmsName);
+		selectedFirmsName = selectedFirmsName.length === 1 ? "Undefined" : selectedFirmsName;
+        setFirm(selectedFirmsName);
         setBorderStyle({border: '', borderStyle: '', borderColor: '', marginTop: ''});
         setTextStyle({textAlign: '', fontSize: '', paddingTop: ''});
         setLogosStyle({width: ''});
     }
 
     return (
-        <div className="firms">
+        <div className="container-firms">
             <section className="firms-list">
 				<h3>{language.firmsTitle}</h3>
 				<ul>
@@ -53,8 +53,8 @@ const Firms = () => {
 			</section>
 
 			<div className="container-grid">
-				<section className="section-map">
-					<img src={require("../img/png/" + language.map + ".png")} alt="Aula" className="map"/>
+				<section className="firms-map">
+					<img src={require("../img/png/" + language.map + ".png")} alt="Aula"/>
 					<div className="container-map">
                         <li style={{gridColumn: "2", gridRow: "2"}}><button className="Veriff" onClick={() => click('Veriff')}>1</button></li>
 						<li style={{gridColumn: "3", gridRow: "2"}}><button className="A_dcash" onClick={() => click('A_dcash')}>2</button></li>
@@ -85,8 +85,8 @@ const Firms = () => {
 				</section>
 				
 				<section style={borderStyle} className="firms-info">
-					<img style={logosStyle} src={require("../img/firms/" + (firm === 'Guide' ? 'Undefined' : firm) + "-logo.png")} alt="firmsLogo" id="firms-logo" />
-					<h2 style={textStyle} className="firms-description">{language.firmList[firm]}</h2>
+					<img style={logosStyle} src={require("../img/firms/" + (firm === 'Guide' ? 'Undefined' : firm) + "-logo.png")} alt="firmsLogo"/>
+					<h2 style={textStyle}>{language.firmList[firm]}</h2>
 				</section>
 			</div>
         </div>
@@ -96,16 +96,15 @@ const Firms = () => {
 export default Firms;
 
 function focusButtons(nameOfFirm) {
-	var list1 = document.getElementsByTagName("UL")[0];
-	var list2 = document.querySelectorAll(".container-map")[0];
+	var arrayOfFirmsNames = document.getElementsByTagName("UL")[0];
+	var arrayOfTables = document.querySelectorAll(".container-map")[0];
 
-	for (let i = 0; i < list1.getElementsByTagName("LI").length; i++) {
-		list1.getElementsByTagName("LI")[i].style.removeProperty('background-color');
-		list2.getElementsByTagName("BUTTON")[i].style.removeProperty('background-color');
-		list2.getElementsByTagName("BUTTON")[i].style.removeProperty('color');
+	for (let i = 0; i < arrayOfFirmsNames.getElementsByTagName("LI").length; i++) {
+		arrayOfFirmsNames.getElementsByTagName("LI")[i].style.cssText = '';
+		arrayOfTables.getElementsByTagName("BUTTON")[i].style.cssText = '';
 	}
 
-	var array = document.querySelectorAll('.' + nameOfFirm);
-	array[0].style.backgroundColor = '#FF0063';
-	array[1].style.cssText = 'background-color: white; color: #FF0063;';
+	var selectedFirm = document.querySelectorAll('.' + nameOfFirm);
+	selectedFirm[0].style.backgroundColor = '#FF0063';
+	selectedFirm[1].style.cssText = 'background-color: white; color: #FF0063;';
 }

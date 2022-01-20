@@ -1,4 +1,4 @@
-import './Layout.css'
+import './Layout.css';
 import Header from "./Header";
 import Navbar from "./Navbar";
 import Firms from './Firms';
@@ -16,11 +16,11 @@ function Layout() {
             </svg>
             <div className="container-main">
                 <Header/>
-                <div className='container'>
+                <div className='container-text'>
                     <About/>
                 </div>
                 <Firms/>
-                <div className='container'>
+                <div className='container-text'>
                     <Questions/>
                 </div>
                 <Footer/>

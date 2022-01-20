@@ -11,7 +11,7 @@ svg {
 	max-width: 1920px;
 }
 
-.container {
+.container-text {
 	background-color: rgba(48, 46, 189, 0.71);
 	padding: 40px;
 }
@@ -21,7 +21,7 @@ svg {
 		width: 100%;
 	}
 
-	.container {
+	.container-text {
 		padding-left: 0;
 		padding-right: 0;
 	}

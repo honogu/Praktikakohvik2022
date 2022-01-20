@@ -1,5 +1,5 @@
-import './Header.css'
-import Logo from '../img/svg/Praktikakohvik_käed.svg'
+import './Header.css';
+import Logo from '../img/svg/Praktikakohvik_käed.svg';
 import { useContext } from "react";
 import { srcContext } from "../SrcContext.js";
 
@@ -16,19 +16,19 @@ const Header = () => {
             <section className="countdown">
                 <div className="container-day">
                     <h3 className="dayNr">0</h3>
-                    <h2>{language.countDown.d}</h2>
+                    <h2>{language.countDown.day}</h2>
                 </div>
                 <div className="container-hour">
                     <h3 className="hourNr">0</h3>
-                    <h2>{language.countDown.h}</h2>
+                    <h2>{language.countDown.hour}</h2>
                 </div>
                 <div className="container-minute">
                     <h3 className="minuteNr">0</h3>
-                    <h2>{language.countDown.m}</h2>
+                    <h2>{language.countDown.minute}</h2>
                 </div>
                 <div className="container-second">
                     <h3 className="secondNr">0</h3>
-                    <h2>{language.countDown.s}</h2>
+                    <h2>{language.countDown.second}</h2>
                 </div>
             </section>
         </header>

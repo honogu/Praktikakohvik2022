@@ -1,10 +1,10 @@
 {
     "et": {
         "countDown": {
-            "d": "PÄEVA",
-            "h": "TUNDI",
-            "m": "MINUTIT",
-            "s": "SEKUNDIT"
+            "day": "PÄEVA",
+            "hour": "TUNDI",
+            "minute": "MINUTIT",
+            "second": "SEKUNDIT"
         },
         "date": "23. MÄRTS | 12:00 - 16:00 TalTechi aula",
         "aboutTitle": "ÜRITUSEST",
@@ -17,14 +17,13 @@
         "questionTitle": "MIDA KÜSIDA?",
         "questionContent": {
             "info": "Siin on mõned näited küsimustest, mida esitada tööandjatele:",
-            "firstQuestion": "• Mis oskusi on vaja, et mingile kohale kandideerida?",
-            "secondQuestion": "• Milliseid tehnoloogiad firmas kasutatakse?",
-            "thirdQuestion": "• Mida oodata palga suhtes?",
-            "fourthQuestion": "• Milline näeb välja kontori igapäev?",
-            "fifthQuestion": "• Milline on töökoormus?",
-            "sixthQuestion": "• Kui paindlik on tudengina tööl käimise juures graafik või koormus?",
-            "seventhQuestion": "• Mis on ettevõttes arenemisvõimalused?",
-            "eighthQuestion": "• Kas pakutakse mingeid lisakoolitusi?"
+            "Question1": "• Mis oskusi on vaja, et mingile kohale kandideerida?",
+            "Question2": "• Milliseid tehnoloogiad firmas kasutatakse?",
+            "Question3": "• Mida oodata palga suhtes?",
+            "Question4": "• Milline näeb välja kontori igapäev?",
+            "Question5": "• Milline on töökoormus?",
+            "Question6": "• Kui paindlik on tudengina tööl käimise juures graafik või koormus?",
+            "Question7": "• Mis on ettevõttes arenemisvõimalused? Kas pakutakse mingeid lisakoolitusi?"
         },
         "firmList": {
             "Guide": "Vajuta firma nimele või lauale, et näha infot.",
@@ -35,10 +34,10 @@
     },
     "en": {
         "countDown": {
-            "d": "DAYS",
-            "h": "HOURS",
-            "m": "MINUTS",
-            "s": "SECONDS"
+            "day": "DAYS",
+            "hour": "HOURS",
+            "minute": "MINUTS",
+            "second": "SECONDS"
         },
         "date": "23. MARCH | 12:00 - 16:00 TalTech hall",
         "aboutTitle": "ABOUT-EVENT",
@@ -51,14 +50,13 @@
         "questionTitle": "WHAT TO ASK?",
         "questionContent": {
             "info": "Here are some examples of questions to ask employers:",
-            "firstQuestion": "• What skills are needed to apply for a position?",
-            "secondQuestion": "• What technologies are used in the company?",
-            "thirdQuestion": "• What to expect in terms of salary?",
-            "fourthQuestion": "• What does the office look like every day?",
-            "fifthQuestion": "• What is the workload?",
-            "sixthQuestion": "• How flexible is the schedule or workload when working as a student?",
-            "seventhQuestion": "• What are the development opportunities in the company? ",
-            "eighthQuestion": "• Are there any additional trainings offered?"
+            "Question1": "• What skills are required to apply for a position?",
+            "Question2": "• What technologies are used in the company?",
+            "Question3": "• What to expect in terms of salary?",
+            "Question4": "• What does the daily work of the office look like?",
+            "Question5": "• What is the workload?",
+            "Question6": "• How flexible is the schedule or workload when working as a student?",
+            "Question7": "• What are the self-development opportunities in the company? Are there any additional trainings offered?"
         },
         "firmList": {
             "Guide": "Press on a firms name or on a table to view info.",

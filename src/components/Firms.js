@@ -4,19 +4,17 @@ import { srcContext } from "../SrcContext.js";
 
 const Firms = () => {
     const { language } = useContext(srcContext);
-    const [firm, setFirm] = useState('Guide');
+    const [firmsText, setFirmsText] = useState('Guide');
 
     const [borderStyle, setBorderStyle] = useState({border: "2px", borderStyle: "dashed", borderColor: "white", marginTop: "25%"});
     const [textStyle, setTextStyle] = useState({textAlign: "center", fontSize: "25px", paddingTop: "50px"});
     const [logosStyle, setLogosStyle] = useState({width: "0"});
 
-    function click(selectedFirmsName) {
-		focusButtons(selectedFirmsName);
-		selectedFirmsName = selectedFirmsName.length === 1 ? "Undefined" : selectedFirmsName;
-        setFirm(selectedFirmsName);
-        setBorderStyle({border: '', borderStyle: '', borderColor: '', marginTop: ''});
-        setTextStyle({textAlign: '', fontSize: '', paddingTop: ''});
-        setLogosStyle({width: ''});
+    function click(clickedButton) {
+		var firmsName = clickedButton.target.className;
+		RemoveStyles(setBorderStyle, setTextStyle, setLogosStyle);
+		AddStylesToSelectedFirmButtons(firmsName);
+		firmsName = firmsName.length === 1 ? setFirmsText("Undefined") : setFirmsText(firmsName);
     }
 
     return (
@@ -24,31 +22,31 @@ const Firms = () => {
             <section className="firms-list">
 				<h3>{language.firmsTitle}</h3>
 				<ul>
-				    <li className="Veriff"><button onClick={() => click('Veriff')}><h2>1. VERIFF</h2></button></li>
-				    <li className="A_dcash"><button onClick={() => click('A_dcash')}><h2>2. ADCASH</h2></button></li>
-				    <li className="C"><button onClick={() => click('C')}><h2>3. ...</h2></button></li>
-				    <li className="D"><button onClick={() => click('D')}><h2>4. ...</h2></button></li>
-				    <li className="E"><button onClick={() => click('E')}><h2>5. ...</h2></button></li>
-				    <li className="F"><button onClick={() => click('F')}><h2>6. ...</h2></button></li>
-				    <li className="G"><button onClick={() => click('G')}><h2>7. ...</h2></button></li>
-				    <li className="H"><button onClick={() => click('H')}><h2>8. ...</h2></button></li>
-				    <li className="I"><button onClick={() => click('I')}><h2>9. ...</h2></button></li>
-				    <li className="J"><button onClick={() => click('J')}><h2>10. ...</h2></button></li>
-				    <li className="K"><button onClick={() => click('K')}><h2>11. ...</h2></button></li>
-				    <li className="L"><button onClick={() => click('L')}><h2>12. ...</h2></button></li>
-				    <li className="M"><button onClick={() => click('M')}><h2>13. ...</h2></button></li>
-				    <li className="N"><button onClick={() => click('N')}><h2>14. ...</h2></button></li>
-				    <li className="O"><button onClick={() => click('O')}><h2>15. ...</h2></button></li>
-				    <li className="P"><button onClick={() => click('P')}><h2>16. ...</h2></button></li>
-				    <li className="Q"><button onClick={() => click('Q')}><h2>17. ...</h2></button></li>
-				    <li className="R"><button onClick={() => click('R')}><h2>18. ...</h2></button></li>
-				    <li className="S"><button onClick={() => click('S')}><h2>19. ...</h2></button></li>
-				    <li className="T"><button onClick={() => click('T')}><h2>20. ...</h2></button></li>
-				    <li className="U"><button onClick={() => click('U')}><h2>21. ...</h2></button></li>
-				    <li className="V"><button onClick={() => click('V')}><h2>22. ...</h2></button></li>
-				    <li className="W"><button onClick={() => click('W')}><h2>23. ...</h2></button></li>
-				    <li className="X"><button onClick={() => click('X')}><h2>24. ...</h2></button></li>
-				    <li className="Y"><button onClick={() => click('Y')}><h2>25. ...</h2></button></li>
+				    <li><button onFocus={(e) => click(e)} className="Veriff"><h2>1. VERIFF</h2></button></li>
+				    <li><button onFocus={(e) => click(e)} className="A_dcash"><h2>2. ADCASH</h2></button></li>
+				    <li><button onFocus={(e) => click(e)} className="C" ><h2>3. ...</h2></button></li>
+				    <li><button onFocus={(e) => click(e)} className="D" ><h2>4. ...</h2></button></li>
+				    <li><button onFocus={(e) => click(e)} className="E" ><h2>5. ...</h2></button></li>
+				    <li><button onFocus={(e) => click(e)} className="F" ><h2>6. ...</h2></button></li>
+				    <li><button onFocus={(e) => click(e)} className="G" ><h2>7. ...</h2></button></li>
+				    <li><button onFocus={(e) => click(e)} className="H" ><h2>8. ...</h2></button></li>
+				    <li><button onFocus={(e) => click(e)} className="I" ><h2>9. ...</h2></button></li>
+				    <li><button onFocus={(e) => click(e)} className="J" ><h2>10. ...</h2></button></li>
+				    <li><button onFocus={(e) => click(e)} className="K" ><h2>11. ...</h2></button></li>
+				    <li><button onFocus={(e) => click(e)} className="L" ><h2>12. ...</h2></button></li>
+				    <li><button onFocus={(e) => click(e)} className="M" ><h2>13. ...</h2></button></li>
+				    <li><button onFocus={(e) => click(e)} className="N" ><h2>14. ...</h2></button></li>
+				    <li><button onFocus={(e) => click(e)} className="O" ><h2>15. ...</h2></button></li>
+				    <li><button onFocus={(e) => click(e)} className="P" ><h2>16. ...</h2></button></li>
+				    <li><button onFocus={(e) => click(e)} className="Q" ><h2>17. ...</h2></button></li>
+				    <li><button onFocus={(e) => click(e)} className="R" ><h2>18. ...</h2></button></li>
+				    <li><button onFocus={(e) => click(e)} className="S" ><h2>19. ...</h2></button></li>
+				    <li><button onFocus={(e) => click(e)} className="T" ><h2>20. ...</h2></button></li>
+				    <li><button onFocus={(e) => click(e)} className="U" ><h2>21. ...</h2></button></li>
+				    <li><button onFocus={(e) => click(e)} className="V" ><h2>22. ...</h2></button></li>
+				    <li><button onFocus={(e) => click(e)} className="W" ><h2>23. ...</h2></button></li>
+				    <li><button onFocus={(e) => click(e)} className="X" ><h2>24. ...</h2></button></li>
+				    <li><button onFocus={(e) => click(e)} className="Y" ><h2>25. ...</h2></button></li>
 				</ul>
 			</section>
 
@@ -56,37 +54,37 @@ const Firms = () => {
 				<section className="firms-map">
 					<img src={require("../img/png/" + language.map + ".png")} alt="Aula"/>
 					<div className="container-map">
-                        <li style={{gridColumn: "2", gridRow: "2"}}><button className="Veriff" onClick={() => click('Veriff')}>1</button></li>
-						<li style={{gridColumn: "3", gridRow: "2"}}><button className="A_dcash" onClick={() => click('A_dcash')}>2</button></li>
-						<li style={{gridColumn: "4", gridRow: "2"}}><button className="C" onClick={() => click('C')}>3</button></li>
-						<li style={{gridColumn: "5", gridRow: "2"}}><button className="D" onClick={() => click('D')}>4</button></li>
-						<li style={{gridColumn: "6", gridRow: "2"}}><button className="E" onClick={() => click('E')}>5</button></li>
-						<li style={{gridColumn: "7", gridRow: "2"}}><button className="F" onClick={() => click('F')}>6</button></li>
-						<li style={{gridColumn: "8", gridRow: "3 / span 2"}}><button className="G" onClick={() => click('G')}>7</button></li>
-						<li style={{gridColumn: "8", gridRow: "5 / span 2"}}><button className="H" onClick={() => click('H')}>8</button></li>
-						<li style={{gridColumn: "8", gridRow: "7 / span 2"}}><button className="I" onClick={() => click('I')}>9</button></li>
-						<li style={{gridColumn: "7", gridRow: "9"}}><button className="J" onClick={() => click('J')}>10</button></li>
-						<li style={{gridColumn: "6", gridRow: "9"}}><button className="K" onClick={() => click('K')}>11</button></li>
-						<li style={{gridColumn: "5", gridRow: "9"}}><button className="L" onClick={() => click('L')}>12</button></li>
-						<li style={{gridColumn: "4", gridRow: "9"}}><button className="M" onClick={() => click('M')}>13</button></li>
-						<li style={{gridColumn: "3", gridRow: "9"}}><button className="N" onClick={() => click('N')}>14</button></li>
-						<li style={{gridColumn: "2", gridRow: "9"}}><button className="O" onClick={() => click('O')}>15</button></li>
-						<li style={{gridColumn: "2", gridRow: "6"}}><button className="P" onClick={() => click('P')}>16</button></li>
-						<li style={{gridColumn: "3", gridRow: "6"}}><button className="Q" onClick={() => click('Q')}>17</button></li>
-						<li style={{gridColumn: "4", gridRow: "6"}}><button className="R" onClick={() => click('R')}>18</button></li>
-						<li style={{gridColumn: "5", gridRow: "6"}}><button className="S" onClick={() => click('S')}>19</button></li>
-						<li style={{gridColumn: "6", gridRow: "6"}}><button className="T" onClick={() => click('T')}>20</button></li>
-						<li style={{gridColumn: "6", gridRow: "5"}}><button className="U" onClick={() => click('U')}>21</button></li>
-						<li style={{gridColumn: "5", gridRow: "5"}}><button className="V" onClick={() => click('V')}>22</button></li>
-						<li style={{gridColumn: "4", gridRow: "5"}}><button className="W" onClick={() => click('W')}>23</button></li>
-						<li style={{gridColumn: "3", gridRow: "5"}}><button className="X" onClick={() => click('X')}>24</button></li>
-						<li style={{gridColumn: "2", gridRow: "5"}}><button className="Y" onClick={() => click('Y')}>25</button></li>
+                        <li style={{gridColumn: "2", gridRow: "2"}}><button onFocus={(e) => click(e)} className="Veriff" >1</button></li>
+						<li style={{gridColumn: "3", gridRow: "2"}}><button onFocus={(e) => click(e)} className="A_dcash" >2</button></li>
+						<li style={{gridColumn: "4", gridRow: "2"}}><button onFocus={(e) => click(e)} className="C" >3</button></li>
+						<li style={{gridColumn: "5", gridRow: "2"}}><button onFocus={(e) => click(e)} className="D" >4</button></li>
+						<li style={{gridColumn: "6", gridRow: "2"}}><button onFocus={(e) => click(e)} className="E" >5</button></li>
+						<li style={{gridColumn: "7", gridRow: "2"}}><button onFocus={(e) => click(e)} className="F" >6</button></li>
+						<li style={{gridColumn: "8", gridRow: "3 / span 2"}}><button onFocus={(e) => click(e)} className="G" >7</button></li>
+						<li style={{gridColumn: "8", gridRow: "5 / span 2"}}><button onFocus={(e) => click(e)} className="H" >8</button></li>
+						<li style={{gridColumn: "8", gridRow: "7 / span 2"}}><button onFocus={(e) => click(e)} className="I" >9</button></li>
+						<li style={{gridColumn: "7", gridRow: "9"}}><button onFocus={(e) => click(e)} className="J" >10</button></li>
+						<li style={{gridColumn: "6", gridRow: "9"}}><button onFocus={(e) => click(e)} className="K" >11</button></li>
+						<li style={{gridColumn: "5", gridRow: "9"}}><button onFocus={(e) => click(e)} className="L" >12</button></li>
+						<li style={{gridColumn: "4", gridRow: "9"}}><button onFocus={(e) => click(e)} className="M" >13</button></li>
+						<li style={{gridColumn: "3", gridRow: "9"}}><button onFocus={(e) => click(e)} className="N" >14</button></li>
+						<li style={{gridColumn: "2", gridRow: "9"}}><button onFocus={(e) => click(e)} className="O" >15</button></li>
+						<li style={{gridColumn: "2", gridRow: "6"}}><button onFocus={(e) => click(e)} className="P" >16</button></li>
+						<li style={{gridColumn: "3", gridRow: "6"}}><button onFocus={(e) => click(e)} className="Q" >17</button></li>
+						<li style={{gridColumn: "4", gridRow: "6"}}><button onFocus={(e) => click(e)} className="R" >18</button></li>
+						<li style={{gridColumn: "5", gridRow: "6"}}><button onFocus={(e) => click(e)} className="S" >19</button></li>
+						<li style={{gridColumn: "6", gridRow: "6"}}><button onFocus={(e) => click(e)} className="T" >20</button></li>
+						<li style={{gridColumn: "6", gridRow: "5"}}><button onFocus={(e) => click(e)} className="U" >21</button></li>
+						<li style={{gridColumn: "5", gridRow: "5"}}><button onFocus={(e) => click(e)} className="V" >22</button></li>
+						<li style={{gridColumn: "4", gridRow: "5"}}><button onFocus={(e) => click(e)} className="W" >23</button></li>
+						<li style={{gridColumn: "3", gridRow: "5"}}><button onFocus={(e) => click(e)} className="X" >24</button></li>
+						<li style={{gridColumn: "2", gridRow: "5"}}><button onFocus={(e) => click(e)} className="Y" >25</button></li>
 					</div>
 				</section>
 				
 				<section style={borderStyle} className="firms-info">
-					<img style={logosStyle} src={require("../img/firms/" + (firm === 'Guide' ? 'Undefined' : firm) + "-logo.png")} alt="firmsLogo"/>
-					<h2 style={textStyle}>{language.firmList[firm]}</h2>
+					<img style={logosStyle} src={require("../img/firms/" + (firmsText === 'Guide' ? 'Undefined' : firmsText) + "-logo.png")} alt="firmsLogo"/>
+					<h2 style={textStyle}>{language.firmList[firmsText]}</h2>
 				</section>
 			</div>
         </div>
@@ -95,16 +93,20 @@ const Firms = () => {
 
 export default Firms;
 
-function focusButtons(nameOfFirm) {
-	var arrayOfFirmsNames = document.getElementsByTagName("UL")[0];
-	var arrayOfTables = document.querySelectorAll(".container-map")[0];
-
-	for (let i = 0; i < arrayOfFirmsNames.getElementsByTagName("LI").length; i++) {
-		arrayOfFirmsNames.getElementsByTagName("LI")[i].style.cssText = '';
-		arrayOfTables.getElementsByTagName("BUTTON")[i].style.cssText = '';
+function RemoveStyles(setBorderStyle, setTextStyle, setLogosStyle) {
+	var arrayOfFirmNameButtons = document.getElementsByTagName("UL")[0];
+	var arrayOfTableButtons = document.querySelectorAll(".container-map")[0];
+	for (let i = 0; i < arrayOfFirmNameButtons.getElementsByTagName("BUTTON").length; i++) {
+		arrayOfFirmNameButtons.getElementsByTagName("BUTTON")[i].style.cssText = '';
+		arrayOfTableButtons.getElementsByTagName("BUTTON")[i].style.cssText = '';
 	}
+	setBorderStyle({border: '', borderStyle: '', borderColor: '', marginTop: ''});
+	setTextStyle({textAlign: '', fontSize: '', paddingTop: ''});
+	setLogosStyle({width: ''});
+}
 
-	var selectedFirm = document.querySelectorAll('.' + nameOfFirm);
-	selectedFirm[0].style.backgroundColor = '#FF0063';
-	selectedFirm[1].style.cssText = 'background-color: white; color: #FF0063;';
+function AddStylesToSelectedFirmButtons(firmsName) {
+	var arrayOfSelectedFirmsButtons = document.querySelectorAll('.' + firmsName);
+	arrayOfSelectedFirmsButtons[0].style.backgroundColor = '#FF0063';
+	arrayOfSelectedFirmsButtons[1].style.cssText = 'background-color: white; color: #FF0063;';
 }

@@ -1,14 +1,14 @@
 nav{
 	height: auto;
 	width: 100%;
-    top: 0;
+    top: -60px;
 	padding-left: 50px;
 	padding-right: 50px;
 	box-sizing: border-box;
 	background-color: #FF0063;
-	visibility: hidden;
 	position: fixed;
 	z-index: 1;
+	transition: top 0.5s;
 }
 
 nav .container-countdown{
@@ -16,15 +16,16 @@ nav .container-countdown{
 }
 
 nav .container-countdown div{
+	transition: 0.5s;
 	float: left;
-	padding-top: 5px;
 	color: white;
 	text-align: center;
 }
 
 .container-nav img{
+	cursor: pointer;
 	position: fixed;
-	top: 13px;
+	top: 11px;
 	left: 20px;
 	z-index: 2;
 	width: 30px;

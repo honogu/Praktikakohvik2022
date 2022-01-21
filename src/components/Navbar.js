@@ -4,7 +4,7 @@ import { srcContext } from "../SrcContext.js";
 
 const Navbar = () => {
     const { value, setValue, language } = useContext(srcContext);
-
+    
     return (
         <div className='container-nav'>
             <img src={require("../img/svg/" + value + "_lipp.svg")} alt="flag" onClick={ () => (value === 'en') ? setValue('et') : setValue('en') }></img>
@@ -38,8 +38,8 @@ export default Navbar;
 window.addEventListener('scroll', () => {
     const scrolled = window.scrollY;
     if (Math.ceil(scrolled) < 350) {
-        document.querySelector('nav').style.visibility = 'hidden';
+        document.querySelector('nav').style.top = '-60px';
     } else {
-        document.querySelector('nav').style.visibility = 'visible';
+        document.querySelector('nav').style.top = '0px';
     }
 })

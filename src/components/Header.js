@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <header>
             <h4>PRAKTIKA-<br/>KOHVIK</h4>
-            <h3>{language.date}</h3>
+            <h3>{language.header.date}</h3>
 
             <img src={Logo} alt="praktikakohvik_logo" id="praktikakohvik_logo" />
             

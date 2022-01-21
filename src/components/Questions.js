@@ -9,16 +9,16 @@ const Questions = () => {
     return (
         <div className='boxedd'>
             <img src={praktikakohvik2020} alt="location"/>
-			<h3>{language.questionTitle}</h3>
+			<h3>{language.questions.questionTitle}</h3>
 			<h2>
-				<br/>{language.questionContent.info}
-				<br/>{language.questionContent.Question1}
-				<br/>{language.questionContent.Question2}
-				<br/>{language.questionContent.Question3}
-				<br/>{language.questionContent.Question4}
-				<br/>{language.questionContent.Question5}
-				<br/>{language.questionContent.Question6}
-				<br/>{language.questionContent.Question7}
+				<br/>{language.questions.questionContent.info}
+				<br/>{language.questions.questionContent.Question1}
+				<br/>{language.questions.questionContent.Question2}
+				<br/>{language.questions.questionContent.Question3}
+				<br/>{language.questions.questionContent.Question4}
+				<br/>{language.questions.questionContent.Question5}
+				<br/>{language.questions.questionContent.Question6}
+				<br/>{language.questions.questionContent.Question7}
 			</h2>
         </div>
     )

@@ -22,8 +22,8 @@ const Firms = () => {
             <section className="firms-list">
 				<h3>{language.firms.firmsTitle}</h3>
 				<ul>
-				    <li><button onFocus={(e) => click(e)} className="Veriff"><h2>VERIFF</h2></button></li>
-				    <li><button onFocus={(e) => click(e)} className="A_dcash"><h2>ADCASH</h2></button></li>
+				    <li><button onFocus={(e) => click(e)} className="A"><h2>A</h2></button></li>
+				    <li><button onFocus={(e) => click(e)} className="B"><h2>B</h2></button></li>
 				    <li><button onFocus={(e) => click(e)} className="C" ><h2>C</h2></button></li>
 				    <li><button onFocus={(e) => click(e)} className="D" ><h2>D</h2></button></li>
 				    <li><button onFocus={(e) => click(e)} className="E" ><h2>E</h2></button></li>
@@ -54,8 +54,8 @@ const Firms = () => {
 				<section className="firms-map">
 					<img src={require("../img/png/" + language.firms.map + ".png")} alt="Aula"/>
 					<div className="container-map">
-                        <li style={{gridColumn: "2", gridRow: "2"}}><button onFocus={(e) => click(e)} className="Veriff" >VER</button></li>
-						<li style={{gridColumn: "3", gridRow: "2"}}><button onFocus={(e) => click(e)} className="A_dcash" >ADC</button></li>
+                        <li style={{gridColumn: "2", gridRow: "2"}}><button onFocus={(e) => click(e)} className="A" >A</button></li>
+						<li style={{gridColumn: "3", gridRow: "2"}}><button onFocus={(e) => click(e)} className="B" >B</button></li>
 						<li style={{gridColumn: "4", gridRow: "2"}}><button onFocus={(e) => click(e)} className="C" >C</button></li>
 						<li style={{gridColumn: "5", gridRow: "2"}}><button onFocus={(e) => click(e)} className="D" >D</button></li>
 						<li style={{gridColumn: "6", gridRow: "2"}}><button onFocus={(e) => click(e)} className="E" >E</button></li>

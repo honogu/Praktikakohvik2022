@@ -91,8 +91,7 @@ ul h2, ul button, ul{
 	position: absolute;
 	display: grid;
 	grid-template-columns: 17% 12% 12% 12% 12% 12% 12% 7% 4%;
-	grid-template-rows: 30% repeat(8, 7.4%);
-	/*grid-template-rows: 4fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;*/
+	grid-template-rows: 4fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
 }
 
 .container-grid{

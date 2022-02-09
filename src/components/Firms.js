@@ -11,6 +11,7 @@ const Firms = () => {
     const [logosStyle, setLogosStyle] = useState({width: "0"});
 
     function click(clickedButton) {
+		console.log('click');
 		var firmsName = clickedButton.target.className;
 		RemoveStyles(setBorderStyle, setTextStyle, setLogosStyle);
 		AddStylesToSelectedFirmButtons(firmsName);

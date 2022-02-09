@@ -23,9 +23,9 @@ const Firms = () => {
             <section className="firms-list">
 				<h3>{language.firms.firmsTitle}</h3>
 				<ul>
-				    <li><button onClick={(e) => click(e)} className="A"><h2>A</h2></button></li>
-				    <li><button onClick={(e) => {click(e) ; console.log('click')}} className="B"><h2>B</h2></button></li>
-				    <li><button onFocus={(e) => click(e)} className="C" ><h2>C</h2></button></li>
+				    <li><button onFocus={(e) => click(e)} className="A"><h2>A</h2></button></li>
+				    <li><button onClick={() => console.log('click')} className="B"><h2>B</h2></button></li>
+				    <li><button onFocus={() => console.log('click')} className="C" ><h2>C</h2></button></li>
 				    <li><button onFocus={(e) => click(e)} className="D" ><h2>D</h2></button></li>
 				    <li><button onFocus={(e) => click(e)} className="E" ><h2>E</h2></button></li>
 				    <li><button onFocus={(e) => click(e)} className="F" ><h2>F</h2></button></li>

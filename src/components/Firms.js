@@ -11,8 +11,7 @@ const Firms = () => {
     const [logosStyle, setLogosStyle] = useState({width: "0"});
 
     function click(clickedButton) {
-		console.log('click');
-		var firmsName = clickedButton.target.className;
+		var firmsName = clickedButton.currentTarget.classList.value;
 		RemoveStyles(setBorderStyle, setTextStyle, setLogosStyle);
 		AddStylesToSelectedFirmButtons(firmsName);
 		firmsName = firmsName.length === 1 ? setFirmsText("Undefined") : setFirmsText(firmsName);
@@ -23,31 +22,31 @@ const Firms = () => {
             <section className="firms-list">
 				<h3>{language.firms.firmsTitle}</h3>
 				<ul>
-				    <li><button onFocus={(e) => click(e)} className="A"><h2>A</h2></button></li>
-				    <li><button onClick={() => console.log('click')} className="B"><h2>B</h2></button></li>
-				    <li><button onFocus={() => console.log('click')} className="C" ><h2>C</h2></button></li>
-				    <li><button onFocus={(e) => click(e)} className="D" ><h2>D</h2></button></li>
-				    <li><button onFocus={(e) => click(e)} className="E" ><h2>E</h2></button></li>
-				    <li><button onFocus={(e) => click(e)} className="F" ><h2>F</h2></button></li>
-				    <li><button onFocus={(e) => click(e)} className="G" ><h2>G</h2></button></li>
-				    <li><button onFocus={(e) => click(e)} className="H" ><h2>H</h2></button></li>
-				    <li><button onFocus={(e) => click(e)} className="I" ><h2>I</h2></button></li>
-				    <li><button onFocus={(e) => click(e)} className="J" ><h2>J</h2></button></li>
-				    <li><button onFocus={(e) => click(e)} className="K" ><h2>K</h2></button></li>
-				    <li><button onFocus={(e) => click(e)} className="L" ><h2>L</h2></button></li>
-				    <li><button onFocus={(e) => click(e)} className="M" ><h2>M</h2></button></li>
-				    <li><button onFocus={(e) => click(e)} className="N" ><h2>N</h2></button></li>
-				    <li><button onFocus={(e) => click(e)} className="O" ><h2>O</h2></button></li>
-				    <li><button onFocus={(e) => click(e)} className="P" ><h2>P</h2></button></li>
-				    <li><button onFocus={(e) => click(e)} className="Q" ><h2>Q</h2></button></li>
-				    <li><button onFocus={(e) => click(e)} className="R" ><h2>R</h2></button></li>
-				    <li><button onFocus={(e) => click(e)} className="S" ><h2>S</h2></button></li>
-				    <li><button onFocus={(e) => click(e)} className="T" ><h2>T</h2></button></li>
-				    <li><button onFocus={(e) => click(e)} className="U" ><h2>U</h2></button></li>
-				    <li><button onFocus={(e) => click(e)} className="V" ><h2>V</h2></button></li>
-				    <li><button onFocus={(e) => click(e)} className="W" ><h2>W</h2></button></li>
-				    <li><button onFocus={(e) => click(e)} className="X" ><h2>X</h2></button></li>
-				    <li><button onFocus={(e) => click(e)} className="Y" ><h2>Y</h2></button></li>
+				    <li><button onClick={(e) => click(e)} className="A"><h2>A</h2></button></li>
+				    <li><button onClick={(e) => click(e)} className="B"><h2>B</h2></button></li>
+				    <li><button onClick={(e) => click(e)} className="C" ><h2>C</h2></button></li>
+				    <li><button onClick={(e) => click(e)} className="D" ><h2>D</h2></button></li>
+				    <li><button onClick={(e) => click(e)} className="E" ><h2>E</h2></button></li>
+				    <li><button onClick={(e) => click(e)} className="F" ><h2>F</h2></button></li>
+				    <li><button onClick={(e) => click(e)} className="G" ><h2>G</h2></button></li>
+				    <li><button onClick={(e) => click(e)} className="H" ><h2>H</h2></button></li>
+				    <li><button onClick={(e) => click(e)} className="I" ><h2>I</h2></button></li>
+				    <li><button onClick={(e) => click(e)} className="J" ><h2>J</h2></button></li>
+				    <li><button onClick={(e) => click(e)} className="K" ><h2>K</h2></button></li>
+				    <li><button onClick={(e) => click(e)} className="L" ><h2>L</h2></button></li>
+				    <li><button onClick={(e) => click(e)} className="M" ><h2>M</h2></button></li>
+				    <li><button onClick={(e) => click(e)} className="N" ><h2>N</h2></button></li>
+				    <li><button onClick={(e) => click(e)} className="O" ><h2>O</h2></button></li>
+				    <li><button onClick={(e) => click(e)} className="P" ><h2>P</h2></button></li>
+				    <li><button onClick={(e) => click(e)} className="Q" ><h2>Q</h2></button></li>
+				    <li><button onClick={(e) => click(e)} className="R" ><h2>R</h2></button></li>
+				    <li><button onClick={(e) => click(e)} className="S" ><h2>S</h2></button></li>
+				    <li><button onClick={(e) => click(e)} className="T" ><h2>T</h2></button></li>
+				    <li><button onClick={(e) => click(e)} className="U" ><h2>U</h2></button></li>
+				    <li><button onClick={(e) => click(e)} className="V" ><h2>V</h2></button></li>
+				    <li><button onClick={(e) => click(e)} className="W" ><h2>W</h2></button></li>
+				    <li><button onClick={(e) => click(e)} className="X" ><h2>X</h2></button></li>
+				    <li><button onClick={(e) => click(e)} className="Y" ><h2>Y</h2></button></li>
 				</ul>
 			</section>
 
@@ -55,31 +54,31 @@ const Firms = () => {
 				<section className="firms-map">
 					<img src={require("../img/png/" + language.firms.map + ".png")} alt="Aula"/>
 					<div className="container-map">
-                        <li style={{gridColumn: "2", gridRow: "2"}}><button onFocus={(e) => click(e)} className="A" >A</button></li>
-						<li style={{gridColumn: "3", gridRow: "2"}}><button onFocus={(e) => click(e)} className="B" >B</button></li>
-						<li style={{gridColumn: "4", gridRow: "2"}}><button onFocus={(e) => click(e)} className="C" >C</button></li>
-						<li style={{gridColumn: "5", gridRow: "2"}}><button onFocus={(e) => click(e)} className="D" >D</button></li>
-						<li style={{gridColumn: "6", gridRow: "2"}}><button onFocus={(e) => click(e)} className="E" >E</button></li>
-						<li style={{gridColumn: "7", gridRow: "2"}}><button onFocus={(e) => click(e)} className="F" >F</button></li>
-						<li style={{gridColumn: "8", gridRow: "3 / span 2"}}><button onFocus={(e) => click(e)} className="G" >G</button></li>
-						<li style={{gridColumn: "8", gridRow: "5 / span 2"}}><button onFocus={(e) => click(e)} className="H" >H</button></li>
-						<li style={{gridColumn: "8", gridRow: "7 / span 2"}}><button onFocus={(e) => click(e)} className="I" >I</button></li>
-						<li style={{gridColumn: "7", gridRow: "9"}}><button onFocus={(e) => click(e)} className="J" >J</button></li>
-						<li style={{gridColumn: "6", gridRow: "9"}}><button onFocus={(e) => click(e)} className="K" >K</button></li>
-						<li style={{gridColumn: "5", gridRow: "9"}}><button onFocus={(e) => click(e)} className="L" >L</button></li>
-						<li style={{gridColumn: "4", gridRow: "9"}}><button onFocus={(e) => click(e)} className="M" >M</button></li>
-						<li style={{gridColumn: "3", gridRow: "9"}}><button onFocus={(e) => click(e)} className="N" >N</button></li>
-						<li style={{gridColumn: "2", gridRow: "9"}}><button onFocus={(e) => click(e)} className="O" >O</button></li>
-						<li style={{gridColumn: "2", gridRow: "6"}}><button onFocus={(e) => click(e)} className="P" >P</button></li>
-						<li style={{gridColumn: "3", gridRow: "6"}}><button onFocus={(e) => click(e)} className="Q" >Q</button></li>
-						<li style={{gridColumn: "4", gridRow: "6"}}><button onFocus={(e) => click(e)} className="R" >R</button></li>
-						<li style={{gridColumn: "5", gridRow: "6"}}><button onFocus={(e) => click(e)} className="S" >S</button></li>
-						<li style={{gridColumn: "6", gridRow: "6"}}><button onFocus={(e) => click(e)} className="T" >T</button></li>
-						<li style={{gridColumn: "6", gridRow: "5"}}><button onFocus={(e) => click(e)} className="U" >U</button></li>
-						<li style={{gridColumn: "5", gridRow: "5"}}><button onFocus={(e) => click(e)} className="V" >V</button></li>
-						<li style={{gridColumn: "4", gridRow: "5"}}><button onFocus={(e) => click(e)} className="W" >W</button></li>
-						<li style={{gridColumn: "3", gridRow: "5"}}><button onFocus={(e) => click(e)} className="X" >X</button></li>
-						<li style={{gridColumn: "2", gridRow: "5"}}><button onFocus={(e) => click(e)} className="Y" >Y</button></li>
+                        <li style={{gridColumn: "2", gridRow: "2"}}><button onClick={(e) => click(e)} className="A" >A</button></li>
+						<li style={{gridColumn: "3", gridRow: "2"}}><button onClick={(e) => click(e)} className="B" >B</button></li>
+						<li style={{gridColumn: "4", gridRow: "2"}}><button onClick={(e) => click(e)} className="C" >C</button></li>
+						<li style={{gridColumn: "5", gridRow: "2"}}><button onClick={(e) => click(e)} className="D" >D</button></li>
+						<li style={{gridColumn: "6", gridRow: "2"}}><button onClick={(e) => click(e)} className="E" >E</button></li>
+						<li style={{gridColumn: "7", gridRow: "2"}}><button onClick={(e) => click(e)} className="F" >F</button></li>
+						<li style={{gridColumn: "8", gridRow: "3 / span 2"}}><button onClick={(e) => click(e)} className="G" >G</button></li>
+						<li style={{gridColumn: "8", gridRow: "5 / span 2"}}><button onClick={(e) => click(e)} className="H" >H</button></li>
+						<li style={{gridColumn: "8", gridRow: "7 / span 2"}}><button onClick={(e) => click(e)} className="I" >I</button></li>
+						<li style={{gridColumn: "7", gridRow: "9"}}><button onClick={(e) => click(e)} className="J" >J</button></li>
+						<li style={{gridColumn: "6", gridRow: "9"}}><button onClick={(e) => click(e)} className="K" >K</button></li>
+						<li style={{gridColumn: "5", gridRow: "9"}}><button onClick={(e) => click(e)} className="L" >L</button></li>
+						<li style={{gridColumn: "4", gridRow: "9"}}><button onClick={(e) => click(e)} className="M" >M</button></li>
+						<li style={{gridColumn: "3", gridRow: "9"}}><button onClick={(e) => click(e)} className="N" >N</button></li>
+						<li style={{gridColumn: "2", gridRow: "9"}}><button onClick={(e) => click(e)} className="O" >O</button></li>
+						<li style={{gridColumn: "2", gridRow: "6"}}><button onClick={(e) => click(e)} className="P" >P</button></li>
+						<li style={{gridColumn: "3", gridRow: "6"}}><button onClick={(e) => click(e)} className="Q" >Q</button></li>
+						<li style={{gridColumn: "4", gridRow: "6"}}><button onClick={(e) => click(e)} className="R" >R</button></li>
+						<li style={{gridColumn: "5", gridRow: "6"}}><button onClick={(e) => click(e)} className="S" >S</button></li>
+						<li style={{gridColumn: "6", gridRow: "6"}}><button onClick={(e) => click(e)} className="T" >T</button></li>
+						<li style={{gridColumn: "6", gridRow: "5"}}><button onClick={(e) => click(e)} className="U" >U</button></li>
+						<li style={{gridColumn: "5", gridRow: "5"}}><button onClick={(e) => click(e)} className="V" >V</button></li>
+						<li style={{gridColumn: "4", gridRow: "5"}}><button onClick={(e) => click(e)} className="W" >W</button></li>
+						<li style={{gridColumn: "3", gridRow: "5"}}><button onClick={(e) => click(e)} className="X" >X</button></li>
+						<li style={{gridColumn: "2", gridRow: "5"}}><button onClick={(e) => click(e)} className="Y" >Y</button></li>
 					</div>
 				</section>
 				

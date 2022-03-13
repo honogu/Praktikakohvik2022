@@ -1,5 +1,5 @@
 import './Questions.css';
-import praktikakohvik2020 from '../img/png/praktikakohvik.jpg';
+import praktikakohvik2019 from '../img/png/praktikakohvik2019.jpg';
 import { useContext } from "react";
 import { srcContext } from "../SrcContext.js";
 
@@ -8,7 +8,7 @@ const Questions = () => {
 
     return (
         <div className='boxedd'>
-            <img src={praktikakohvik2020} alt="location"/>
+            <img src={praktikakohvik2019} alt="location"/>
 			<h3>{language.questions.questionTitle}</h3>
 			<h2>
 				<br/>{language.questions.questionContent.info}

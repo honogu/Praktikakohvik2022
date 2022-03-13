@@ -1,7 +1,7 @@
 nav{
 	height: auto;
 	width: 100%;
-    top: -60px;
+    top: -90px;
 	padding-left: 50px;
 	padding-right: 50px;
 	box-sizing: border-box;
@@ -16,7 +16,6 @@ nav .container-countdown{
 }
 
 nav .container-countdown div{
-	transition: 0.5s;
 	float: left;
 	color: white;
 	text-align: center;
@@ -26,7 +25,7 @@ nav .container-countdown div{
 	cursor: pointer;
 	position: fixed;
 	top: 11px;
-	left: 20px;
+	left: 25px;
 	z-index: 2;
 	width: 30px;
 	height: auto;
@@ -51,11 +50,13 @@ nav .container-countdown div{
 
 @media all and (max-width: 700px){
 	nav{
-		height: 60px;
+		height: 55px;
 	}
 
 	.container-countdown div{
 		width: 45px;
+		height: 15px;
+		padding-bottom: 7px;
 	}
 
 	nav h2{

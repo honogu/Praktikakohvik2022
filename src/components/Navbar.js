@@ -4,7 +4,7 @@ import { srcContext } from "../SrcContext.js";
 
 const Navbar = () => {
     const { value, setValue, language } = useContext(srcContext);
-    
+
     return (
         <div className='container-nav'>
             <img src={require("../img/svg/" + value + "_lipp.svg")} alt="flag" onClick={ () => (value === 'en') ? setValue('et') : setValue('en') }></img>

@@ -24,7 +24,7 @@ const Firms = () => {
 				<ul>
 				    <li><button onFocus={(e) => click(e)} className="A_dcash"><h2>Adcash</h2></button></li>
 					<li><button onFocus={(e) => click(e)} className="ADMInteractive"><h2>ADM Interactive</h2></button></li>
-					<li><button onFocus={(e) => click(e)} className="Agileworks"><h2>AgileWorks AS</h2></button></li>
+					<li><button onFocus={(e) => click(e)} className="Agileworks"><h2>AgileWorks</h2></button></li>
 				    <li><button onFocus={(e) => click(e)} className="ArtecDesign"><h2>Artec Design</h2></button></li>
 				    <li><button onFocus={(e) => click(e)} className="BaitPartner"><h2>Bait Partner</h2></button></li>
 					<li><button onFocus={(e) => click(e)} className="Cybernetica"><h2>Cybernetica</h2></button></li>
@@ -44,8 +44,9 @@ const Firms = () => {
 					<li><button onFocus={(e) => click(e)} className="SpinTEK"><h2>SpinTek</h2></button></li>
 					<li><button onFocus={(e) => click(e)} className="Statistikaamet"><h2>Statistikaamet</h2></button></li>
 				    <li><button onFocus={(e) => click(e)} className="Swedbank"><h2>Swedbank</h2></button></li>
+					<li><button onFocus={(e) => click(e)} className="TTJA"><h2>Tarbijakaitse ja Tehnilise Järelvalve Amet</h2></button></li>
+					<li><button onFocus={(e) => click(e)} className="TeadusarvutusteKeskus"><h2>Teadusarvutuste Keskus</h2></button></li>
 				    <li><button onFocus={(e) => click(e)} className="Telia"><h2>Telia</h2></button></li>
-				    <li><button onFocus={(e) => click(e)} className="TJTJA"><h2>Tarbijakaitse ja Tehnilise Järelvalve Amet</h2></button></li>
 				</ul>
 			</section>
 
@@ -59,12 +60,12 @@ const Firms = () => {
 						<li style={{gridColumn: "5", gridRow: "2"}}><button onFocus={(e) => click(e)} className="ArtecDesign">ART</button></li>
 						<li style={{gridColumn: "6", gridRow: "2"}}><button onFocus={(e) => click(e)} className="BaitPartner">BAI</button></li>
 						<li style={{gridColumn: "7", gridRow: "2"}}><button onFocus={(e) => click(e)} className="Cybernetica">CYB</button></li>
-						<li style={{gridColumn: "8", gridRow: "3 / span 2"}}><button onFocus={(e) => click(e)} className="Devtailor"><h2 id='sideways'>DEV</h2></button></li>
-						<li style={{gridColumn: "8", gridRow: "5 / span 2"}}><button onFocus={(e) => click(e)} className="EestiEnergia"><h2 id='sideways'>EES</h2></button></li>
-						<li style={{gridColumn: "8", gridRow: "7 / span 2"}}><button onFocus={(e) => click(e)} className="Eleport"><h2 id='sideways'>ELE</h2></button></li>
+						<li style={{gridColumn: "8", gridRow: "3 / span 2"}}><button onFocus={(e) => click(e)} className="Devtailor"><h5 id='sideways'>DEV</h5></button></li>
+						<li style={{gridColumn: "8", gridRow: "5 / span 2"}}><button onFocus={(e) => click(e)} className="EestiEnergia"><h5 id='sideways'>EES</h5></button></li>
+						<li style={{gridColumn: "8", gridRow: "7 / span 2"}}><button onFocus={(e) => click(e)} className="Eleport"><h5 id='sideways'>ELE</h5></button></li>
 						<li style={{gridColumn: "7", gridRow: "9"}}><button onFocus={(e) => click(e)} className="Ericsson">ERI</button></li>
 						<li style={{gridColumn: "6", gridRow: "9"}}><button onFocus={(e) => click(e)} className="Finestmedia">FIM</button></li>
-						<li style={{gridColumn: "5", gridRow: "9"}}><button onFocus={(e) => click(e)} className="Finnair">FBS</button></li>
+						<li style={{gridColumn: "5", gridRow: "9"}}><button onFocus={(e) => click(e)} className="Finnair">FIN</button></li>
 						<li style={{gridColumn: "4", gridRow: "9"}}><button onFocus={(e) => click(e)} className="Fujitsu">FUJ</button></li>
 						<li style={{gridColumn: "3", gridRow: "9"}}><button onFocus={(e) => click(e)} className="ITKasutajatugi">ITK</button></li>
 						<li style={{gridColumn: "2", gridRow: "9"}}><button onFocus={(e) => click(e)} className="Itestra">ITE</button></li>
@@ -75,8 +76,9 @@ const Firms = () => {
 						<li style={{gridColumn: "6", gridRow: "6"}}><button onFocus={(e) => click(e)} className="SpinTEK">SPI</button></li>
 						<li style={{gridColumn: "6", gridRow: "5"}}><button onFocus={(e) => click(e)} className="Statistikaamet">STA</button></li>
 						<li style={{gridColumn: "5", gridRow: "5"}}><button onFocus={(e) => click(e)} className="Swedbank">SWE</button></li>
-						<li style={{gridColumn: "4", gridRow: "5"}}><button onFocus={(e) => click(e)} className="Telia">TEL</button></li>
-						<li style={{gridColumn: "3", gridRow: "5"}}><button onFocus={(e) => click(e)} className="TJTJA">TTA</button></li>
+						<li style={{gridColumn: "4", gridRow: "5"}}><button onFocus={(e) => click(e)} className="TTJA">TTJ</button></li>
+						<li style={{gridColumn: "3", gridRow: "5"}}><button onFocus={(e) => click(e)} className="TeadusarvutusteKeskus">TEA</button></li>
+						<li style={{gridColumn: "2", gridRow: "5"}}><button onFocus={(e) => click(e)} className="Telia">TEL</button></li>
 					</div>
 				</section>
 				

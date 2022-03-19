@@ -53,7 +53,7 @@ const Firms = () => {
 			<div className="container-grid">
 				<section className="firms-map">
 					<img src={require("../img/png/" + language.firms.map + ".png")} alt="Aula"/>
-					<div className='.aspect-ratio-box'>
+					<div className='aspect-ratio-box'>
 						<div className="container-map">
 							<li style={{gridColumn: "2", gridRow: "2"}}><button onClick={(e) => click(e)} className="A_dcash">ADC</button></li>
 							<li style={{gridColumn: "3", gridRow: "2"}}><button onClick={(e) => click(e)} className="ADMInteractive">ADM</button></li>

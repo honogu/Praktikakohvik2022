@@ -65,7 +65,9 @@ ul h2, ul button, ul{
 	margin-bottom: 20px;
 	width: 100%;
 	max-width: 300px;
-	aspect-ratio: 3.5 / 1;
+	/*aspect-ratio: 3.5 / 1;*/
+	position: relative;
+  	padding-top: 3.5%;
 	border: solid;
 	border-left: solid 15px;
 	border-right: solid 15px;
@@ -106,12 +108,20 @@ ul h2, ul button, ul{
 	height: auto;
 }
 
+.aspect-ratio-box{
+	height: 0;
+	overflow: hidden;
+	padding-top: 68px / 81px * 100%;
+	background: white;
+	position: relative;
+}
+
 .container-map{
 	list-style-type: none;
 	top: 0;
 	left: 0;
 	width: 100%;
-	aspect-ratio: auto 81 / 68;
+	height: 100%;
 	position: absolute;
 	display: grid;
 	grid-template-columns: 17% 12% 12% 12% 12% 12% 12% 7% 4%;

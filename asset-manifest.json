@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Praktikakohvik2022/static/css/main.22f729a3.css",
-    "main.js": "/Praktikakohvik2022/static/js/main.97f0c4b6.js",
+    "main.css": "/Praktikakohvik2022/static/css/main.31878574.css",
+    "main.js": "/Praktikakohvik2022/static/js/main.da49b98e.js",
     "static/js/787.25393b4e.chunk.js": "/Praktikakohvik2022/static/js/787.25393b4e.chunk.js",
     "static/media/praktikakohvik2019.jpg": "/Praktikakohvik2022/static/media/praktikakohvik2019.ee9bb563fd78b38b93d6.jpg",
     "static/media/PowerUp-logo.png": "/Praktikakohvik2022/static/media/PowerUp-logo.711364d12aa37aa6c4d1.png",
@@ -45,12 +45,12 @@
     "static/media/facebook.svg": "/Praktikakohvik2022/static/media/facebook.8d7f8611e0ec8ad941617479d7498bce.svg",
     "static/media/ituk.svg": "/Praktikakohvik2022/static/media/ituk.3137fddb03fcd53502124b55072a5969.svg",
     "static/media/geo-alt-fill.svg": "/Praktikakohvik2022/static/media/geo-alt-fill.74cbbebd84c14464737336f23c4d96a4.svg",
-    "main.22f729a3.css.map": "/Praktikakohvik2022/static/css/main.22f729a3.css.map",
-    "main.97f0c4b6.js.map": "/Praktikakohvik2022/static/js/main.97f0c4b6.js.map",
+    "main.31878574.css.map": "/Praktikakohvik2022/static/css/main.31878574.css.map",
+    "main.da49b98e.js.map": "/Praktikakohvik2022/static/js/main.da49b98e.js.map",
     "787.25393b4e.chunk.js.map": "/Praktikakohvik2022/static/js/787.25393b4e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.22f729a3.css",
-    "static/js/main.97f0c4b6.js"
+    "static/css/main.31878574.css",
+    "static/js/main.da49b98e.js"
   ]
 }

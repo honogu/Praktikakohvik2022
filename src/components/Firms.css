@@ -3,7 +3,6 @@
 	margin-top: 60px;
 	margin-bottom: 60px;
 	overflow: hidden;
-	white-space: pre-wrap;
 }
 
 .firms-list{
@@ -56,6 +55,9 @@ ul h2, ul button, ul{
 	text-align: left;
 	font-size: 19px;
 	padding-bottom: 50px;
+	white-space: pre-wrap;
+	word-wrap:break-word;
+	text-overflow: ellipsis; 
 }
 
 .image-container{

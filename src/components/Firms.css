@@ -65,9 +65,7 @@ ul h2, ul button, ul{
 	margin-bottom: 20px;
 	width: 100%;
 	max-width: 300px;
-	/*aspect-ratio: 3.5 / 1;*/
-	position: relative;
-  	padding-top: 3.5%;
+	aspect-ratio: 3.5 / 1;
 	border: solid;
 	border-left: solid 15px;
 	border-right: solid 15px;
